@@ -177,6 +177,10 @@ Marlon Edinson CJ https://github.com/MarlonCJ
 
 Dainer Cortés : https://github.com/nosmow
 
+Sebastian : https://github.com/Sebasrc2702
+
+Juan Esteban : https://github.com/Juan1Esteban
+
 ¡Gracias por visitar nuestro proyecto! 🐾
 
 
