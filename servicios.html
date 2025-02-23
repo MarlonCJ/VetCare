@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Patitas - Servicios</title>
+    <link rel="stylesheet" href="css/servicios.css">
+</head>
+<body>
+    <header>
+        <h1>Servicios Veterinarios</h1>
+        <p>Profesionales dedicados al cuidado de tu mascota</p>
+    </header>
+
+    <div class="servicios-container">
+        <div class="grid-servicios">
+            <div class="servicio">
+                <img src="" alt="Consulta veterinaria">
+                <h2>Consultas Médicas</h2>
+                <p>Revisiones generales, diagnóstico de enfermedades y seguimiento de tratamientos. Contamos con equipos de última generación para el cuidado de tu mascota.</p>
+                <a href="contacto.html" class="boton-contacto">Contactar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="" alt="Vacunación">
+                <h2>Vacunación</h2>
+                <p>Programa completo de vacunación para perros y gatos. Protege a tu mascota contra las enfermedades más comunes.</p>
+                <a href="contacto.html" class="boton-contacto">Contactar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="" alt="Cirugía">
+                <h2>Cirugías</h2>
+                <p>Realizamos procedimientos quirúrgicos con los más altos estándares de seguridad. Sala de operaciones totalmente equipada.</p>
+                <a href="contacto.html" class="boton-contacto">Contactar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="" alt="Peluquería">
+                <h2>Peluquería</h2>
+                <p>Servicio de estética y belleza para mascotas. Baño terapéutico, corte de pelo y uñas, limpieza de oídos y más.</p>
+                <a href="contacto.html" class="boton-contacto">Contactar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script>
+    
+        document.querySelectorAll('.boton-contacto').forEach(boton => {
+        boton.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Animación del botón
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+            window.location.href = this.href;
+        }, 200);
+    });
+});
+
+        document.querySelectorAll('.servicio').forEach(servicio => {
+        servicio.addEventListener('mouseover', () => {
+        servicio.style.transform = 'translateY(-5px) scale(1.02)';
+    });
+    
+    servicio.addEventListener('mouseout', () => {
+        servicio.style.transform = 'translateY(0) scale(1)';
+    });
+});
+    </script>
+</body>
+</html>
