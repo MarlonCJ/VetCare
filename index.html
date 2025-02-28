@@ -3,11 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/inicio.css">
+
     <title>Document</title>
 </head>
 <body>
-    <h1>TITULO</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis deleniti est. Excepturi quidem quam perspiciatis, sint itaque saepe eum.</p>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">Vet<span class="color-prim">Care</span></a>
+        </div>
+        <div class="header__menu">
+            <label for="toggle" class="header__movil-btn"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Inicio</a>
+                <a class="header__link" href="servicios.html">Servicios</a>
+                <a class="header__link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a class="header__link" href="blog.html">Blog</a>
+            </nav>
+        </div>
+        <div class="header__contact">
+            <a class="header__btn" href="contacto.html">Contacto</a>
+        </div>
+    </header>
+    <div class="image-container">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Haz Clic</button>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero__col">
+            <h2>Bienvenidos a VetCare 🏥</h2>
+            <p>Ofrecemos atención veterinaria de calidad con amor y dedicación. Tu mascota merece lo mejor.</p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__col">
+            <img src="img/slider-img.png" alt="">
+        </div>
+        <div class="about__col">
+            <h2 class="title-2">Sobre Nosotros</h2>
+            <article class="mission">
+                <h3>Nuestra Misión</h3>
+                <p>Cuidar la salud y felicidad de cada mascota con un servicio médico veterinario integral, combinando tecnología, conocimiento y amor por los animales.</p>
+            </article>
+            <article class="values">
+                <h3>Nuestros Valores</h3>
+                <ul>
+                    <li><strong>Compromiso:</strong> Tu mascota es nuestra prioridad.</li>
+                    <li><strong>Calidad:</strong> Servicios veterinarios con los más altos estándares.</li>
+                    <li><strong>Empatía:</strong> Entendemos el vínculo especial entre humanos y animales.</li>
+                    <li><strong>Innovación:</strong> Siempre a la vanguardia en tratamientos y cuidados.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section class="services">
+        <header class="services__header">
+            <h2>Servicios Veterinarios</h2>
+        </header>
+        <article class="services__row">
+            <div class="services__col">
+                <img src="img/s-1.png" alt="">
+                <h3>💉 Vacunación y desparasitación</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nesciunt.</p>
+            </div>
+            <div class="services__col">
+                <img src="img/s-2.png" alt="">
+                <h3>🦷 Odontología veterinaria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nesciunt.</p>
+            </div>
+            <div class="services__col">
+                <img src="img/s-3.png" alt="">
+                <h3>🐾 Consultas y revisiones generales</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nesciunt.</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+        <h2>Lo que dicen nuestros clientes 🗣️</h2>
+        <article class="testimonial">
+            <p>"Gracias a VetCare, mi perrito se recuperó rápidamente. Excelente atención y cariño por los animales." – <strong>María G.</strong></p>
+        </article>
+        <article class="testimonial">
+            <p>"El mejor servicio veterinario, confiamos en ellos para el cuidado de nuestras mascotas." – <strong>Carlos M.</strong></p>
+        </article>
+    </section>
+    <section id="galeria" class="gallery">
+        <h2>Nuestros Pacientes 🐶🐱</h2>
+        <div class="gallery-images">
+            <img src="img/mascota1.jpg" alt="Mascota feliz">
+            <img src="img/mascota2.jpg" alt="Consulta veterinaria">
+            <img src="img/mascota3.jpg" alt="Equipo de VetCare">
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 VetCare | Cuidamos a tus mascotas con amor 🏥🐾</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
