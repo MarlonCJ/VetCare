@@ -1,0 +1,91 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+h2 {
+    text-align: center;
+    margin: 2rem auto;
+}
+.news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 2rem);
+    border: 1px solid var(--gray);
+    border-bottom-width: 6px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0 auto 2rem auto;
+}
+.card img {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 2rem;
+}
+.card-title {
+    text-align: center;
+}
+.btn {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    background:  var(--color-primario);
+    padding: 1rem;
+    font-weight: 900;
+    color: var(--gray);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: var(--color-secundario);
+}
+.comments {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+.comments-wrapper{
+    display: flex;
+    gap: 1.5rem;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+    min-height: 150px;
+    border: 1px solid var(--gray);
+    border-bottom-width: 6px;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.comment img {
+    display: block;
+    max-width: 80%;
+    border-radius: 1rem;
+    margin: auto;
+}
+.comment p {
+    text-wrap: initial;
+}
+
+@media screen and (max-width: 635px) {
+    .card {
+        width: 90%;
+    }
+}
