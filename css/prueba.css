@@ -1,0 +1,24 @@
+
+.toggle-checkbox {
+    display: none; 
+}
+
+.header__menu{
+    
+    display: none;
+}
+
+
+.toggle-checkbox:checked ~ .header__menu {
+    display: block;
+}
+
+/* Estilos del botón */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

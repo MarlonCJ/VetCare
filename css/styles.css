@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 @import url("colors.css");
+=======
+
+:root{
+    --color-primario: #FBBC05;
+    --text: #323232;
+    --back: #EDE8E8; 
+    --black: #000000;
+    --white: #fff;     
+    --grey: #dee2e6;
+    --color-1:#0e4451;
+}
+>>>>>>> marlon
 
 *{
     box-sizing: border-box;
@@ -30,6 +43,8 @@
 
 
 body{
+    margin: 0 auto;
+    max-width: 1600px;
     font-family: 'Poppins',sans-serif;
     font-weight: 400;
     color: var(--text);
@@ -54,6 +69,7 @@ h2 {
 p {
     font-size: 1rem; /* 16px */
     color: var(--text);
+<<<<<<< HEAD
     margin-bottom: 1.5rem;
 }
 hr {
@@ -63,3 +79,13 @@ hr {
     margin: 20px auto;
     width: 90%;
 }
+=======
+    margin-bottom: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+>>>>>>> marlon
